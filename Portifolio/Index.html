@@ -1,35 +1,92 @@
-<html>
+<html lang="pt-br">
     <head>
         <title>Portifolio Grégory</title>
+        <link rel="stylesheet" href="css/style.css"/>
         <style>
-
         </style>
     </head>
     <body>
-        <h1>Grégory Vinicius Clariano Silva</h1>
-        <div>
-            <h3>Breve resumo</h3>
-            <p>Me chamo Grégory Vinicius. Sou um jovem estudante do curso de graduação de engenharia de software, estou no 3° ano do curso
-            e sempre busco aprender novas tecnologias, des de criança já me interessava em tecnologias, jogando muitos jogos em flash com meus 9 anos e 
-            hoje em dia desenvolvendo softwares eu mesmo, tenho muita vontade de desenvolver um jogo, pode ser que ate no final deste portifolio tenha
-            o link de um jogo que eu fiz, mas quem sabe né.</p>
-        </div>
-        <div>
-            <h3>Seção de Linguagens</h3>
-            <p>Python - Linguagem que utilizei durante o primeiro ano da graduação de engenharia de software na disciplina de Algoritimos I, foi uma
-                 linguagem otima para aprender o basico de logica de programação, alem de ser simples, tambem é uma linguagem "limpa" sem muita
-                 sintax, mas ainda sim utilizamos uma sintax basica para já termos uma organização de codigo e padronização.
-            </p>
-            <p>
-                Java - Uma linguagem que é utilizada mundialmente e foi usado para explicar e desenvolver os conceits de POO como polimorfismo e
-                encapisulamento durante a disciplina de programação orientada a objetos(POO), e como trabalho final desenvolvi um jogo de nave contra inimigos 
-                no estilo Space Invades somente em Java. Link repositorio: https://github.com/GregoryVinicius/jogo-2d-poo.git
-            </p>
-            <p>
-                C - A linguagem que é a base para muitas outras linguagens, na disciplina de algoritmos II foi utilizado o C como linguagem de 
-                programação durante todo ano, por ser uma linguagem de baixo nivel nos foi apresentado como funciona ponteiros na menoria, 
-                alocação de ponteiros, lista, pilha, etc.
-            </p>
-        </div>
+
+        <header class="site-header">
+            <div class="container">
+            <nav class="main-navigation">
+                <ul class=".main-navigation"> 
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#linguagens">Linguagens</a></li>
+                    <li><a href="#formacao-academica">Formação Academica</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="clearfix" sobre-min>
+                <img class="profite-pic" src="img/foto-temporario.jpg" alt="Minha foto"></p>
+                <h1>Grégory Vinicius Clariano Silva</h1>
+                <h3>Sobre Min</h3>
+                <p>Me chamo Grégory Vinicius. Sou um jovem estudante do curso de graduação de engenharia de software.</p>
+            </section>
+            <section>
+                <h2>Projetos Desenvolvidos</h2>
+                <div class="project-grid">
+                    <article class="project-item">
+                        <img src="img/projeto-jogo.png" alt="Imagem nave jogo">
+                        <div class="project-info">
+                            <h3>Projeto jogo nave</h3>
+                            <p>Descrição do projeto</p>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <img src="img/projeto-pong (1).png" alt="Imagem pong jogo">
+                        <div class="project-info">
+                            <h3>Projeto jogo pong</h3>
+                            <p>Descrição do projeto</p>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <img src="img/projeto-jogo.png" alt="Imagem nave jogo">
+                        <div class="project-info">
+                            <h3>projeto ai</h3>
+                            <p>Descrição do projeto</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="clearfix">
+                <h3>Seção de Linguagens</h3>
+                <p>Python - Linguagem que utilizei durante o primeiro ano da graduação de engenharia de software na disciplina de
+                    Algoritimos I, foi uma
+                    linguagem otima para aprender o basico de logica de programação, alem de ser simples, tambem é uma linguagem
+                    "limpa" sem muita
+                    sintax, mas ainda sim utilizamos uma sintax basica para já termos uma organização de codigo e padronização.</p>
+                <p>Java - Uma linguagem que é utilizada mundialmente e foi usado para explicar e desenvolver os conceits de POO
+                    como polimorfismo e
+                    encapisulamento durante a disciplina de programação orientada a objetos(POO), e como trabalho final desenvolvi
+                    um jogo de nave contra inimigos
+                    no estilo Space Invades somente em Java. Link repositorio:<a class="main-link" href="https://github.com/GregoryVinicius/jogo-2d-poo.git"> Link jogo</a></p>
+                <p>C - A linguagem que é a base para muitas outras linguagens, na disciplina de algoritmos II foi utilizado o C
+                    como linguagem de
+                    programação durante todo ano, por ser uma linguagem de baixo nivel nos foi apresentado como funciona ponteiros
+                    na menoria,
+                    alocação de ponteiros, lista, pilha, etc.</p>
+            </section>
+            <section>
+                <div>
+                    <h3>seção de educação</h3>
+                    <p>Escola José Vaz de Carvalho - Ensino Fundamental - segunda a sexta</p>
+                    <p>Colegio Estadual do Campo Adelia Rossi Arnaldi - Ensino Medio - segunda a sexta</p>
+                    <p>Instituto Federal do Paraná (IFPR) - Campus Paranavaí - Graduação Engenharia de Software - segunda a sexta</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+
+
+
+        </footer>
+        
+
     </body>
 </html>
