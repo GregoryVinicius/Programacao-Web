@@ -74,3 +74,12 @@ body{
 .project-info{
     padding: 10px;
 }
+
+.language-item{
+    width: 100%;
+    height: 260px;
+    background-color: #663333;
+    border: 2px solid #faebd7;
+    border-radius: 8px; 
+    margin: 20px;
+}
