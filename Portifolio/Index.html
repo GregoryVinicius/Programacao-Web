@@ -101,7 +101,16 @@
 		</div>
 	    </section>
         </main>
-
+        <script src="script.js"></script>
+        <div class="container">
+            <h1>Consulta de Repositorio</h1>
+            <input type="text" id="inputNomeUsuario" placeholder="Informe o nome do usuário"/>
+            <button onclick="consultarRepositorios()">
+                Consultar Repositorios
+            </button>
+            <span id="status"></span>
+            <ul id="listaRepositorios"></ul>
+        </div>
         <footer class="site-footer">
 
 	<p class="main-link">:) *-* :P :D D: :B </p>
@@ -110,6 +119,5 @@
 
         </footer>
         
-
     </body>
 </html>
