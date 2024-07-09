@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     verificarTema();
     verificarLocalizacaoStorage();
-    apresentarCurriculo();
     lerCurriculo();
 });
 
@@ -56,13 +55,14 @@ function gerarCV(){
 }
 
 function apresentarCurriculo(data){
-    const template = document.getElementById('templateCurriculo').contentEditable.cloneNode(true);
+    const template = document.getElementById('templateCurriculo').content.cloneNode(true);
+    console.log(data);
     template.querySelector(".nome").textContent = data.nome;
     template.querySelector(".email").textContent = data.email;
     template.querySelector(".telefone").textContent = data.telefone;
     template.querySelector(".localizacao").textContent = data.localizacao;
     template.querySelector(".experiencia").textContent = data.experiencia;
-    template.querySelector(".habilidade").textContent = data.habilidade;
+    template.querySelector(".habilidades").textContent = data.habilidade;
 
     const mostrarCurriculo = document.getElementById("mostraCurriculo");
     mostrarCurriculo.innerHTML = "";
@@ -77,7 +77,7 @@ function lerCurriculo(){
 }
 
 function copiar(){
-    const curriculo = document.getElementById("mostrarCurriculo").textContent;
+    const curriculo = document.getElementById("CV").textContent;
     navigator.clipboard.writeText(curriculo).then(()=>{
         alert("Conteudo copiado para a área de trasferência")
     }).catch(error=>{
