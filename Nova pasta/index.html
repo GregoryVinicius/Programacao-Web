@@ -26,11 +26,26 @@
       <textarea id="experiencia" placeholder="Suas experiências profissionais"></textarea>
       <label for="habilidades">Habilidades:</label>
       <textarea id="habilidades" placeholder="Suas habilidades"></textarea>
-      <button onclick="gerar()">Gerar CV</button>
+      <button onclick="gerarCV()">Gerar CV</button>
     </div>
     <div id="cv-container">
-      <h2 id="cv-titulo">Seu CV</h2>      
+      <h2 id="cv-titulo">Seu CV</h2>    
+      <div id = "mostraCurriculo"></div>  
     </div>
+
+    <button onclick="copiar">Copiar Curriculo</button>
+
+    <template id="templateCurriculo">
+      <div class="CV">
+        <h1 class = "nome"></h1>
+        <p class="email"></p>
+        <p class="telefone"></p>
+        <p class="telefone"></p>
+        <p class="localizacao"></p>
+        <p class="experiencia"></p>
+        <p class="habilidades"></p>
+      </div>
+    </template>
   </div>
   <script src="index.js"></script>
 </body>
