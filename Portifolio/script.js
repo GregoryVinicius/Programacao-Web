@@ -2,51 +2,51 @@ document.addEventListener("DOMContentLoaded", () => {
     verificarTema();    
 });
 
-// async function consultarRepositorios(){
-//     const nomeUsuario = document.getElementById("inputNomeUsuario").value;
+async function consultarRepositorios(){
+    const nomeUsuario = document.getElementById("inputNomeUsuario").value;
 
-//     const listaRepositorios = document.getElementById("listaRepositorios");
+    const listaRepositorios = document.getElementById("listaRepositorios");
 
-//     const status = document.getElementById("status");
+    const status = document.getElementById("status");
     
-//     listaRepositorios.innerText='';
+    listaRepositorios.innerText='';
 
-//     if(!nomeUsuario){
-//         alert("Informar o nome do usuário");
-//         return;
-//     }
+    if(!nomeUsuario){
+        alert("Informar o nome do usuário");
+        return;
+    }
 
-//     const url = `https://api.github.com/users/${nomeUsuario}/repos`;
+    const url = `https://api.github.com/users/${nomeUsuario}/repos`;
 
-//     status.innerText="Carregando...";
+    status.innerText="Carregando...";
 
-//     try{
-//         const resposta = await fetch(url);
-//         console.log("antes da promisse")
-//         /*resposta.then(res=>{
-//             console.log(res);
-//         }); */
+    try{
+        const resposta = await fetch(url);
+        console.log("antes da promisse")
+        /*resposta.then(res=>{
+            console.log(res);
+        }); */
 
-//         if(!resposta.ok){
-//             alert("Erro ao realizar a consulta");
-//             return;
-//         }
+        if(!resposta.ok){
+            alert("Erro ao realizar a consulta");
+            return;
+        }
 
-//         const repositorios = await resposta.json();
+        const repositorios = await resposta.json();
 
-//         repositorios.forEach(element => {
-//             const itemLista = document.createElement('li');
-//             itemLista.textContent = element.name;
-//             listaRepositorios.appendChild(itemLista);
-//         });
+        repositorios.forEach(element => {
+            const itemLista = document.createElement('li');
+            itemLista.textContent = element.name;
+            listaRepositorios.appendChild(itemLista);
+        });
 
-//         console.log("Apôs a promisse");
-//     } catch (error){
+        console.log("Apôs a promisse");
+    } catch (error){
 
-//     }
+    }
     
-// status.innerText("");
-// }
+status.innerText("");
+}
 
 function verificarTema() {
     const temaArmazenado = localStorage.getItem('tema');
