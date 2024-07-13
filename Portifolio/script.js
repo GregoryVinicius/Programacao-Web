@@ -61,3 +61,23 @@ function alterarTema() {
     document.body.setAttribute("data-tema", novoTema);
     localStorage.setItem("tema", novoTema);
 }
+
+function copiarTelefone(){
+    const telefone = "44988182089";
+    navigator.clipboard.writeText(telefone).then(()=>{
+        alert("Conteudo copiado para a área de trasferência")
+    }).catch(error=>{
+        console.error("erro ao copiar", error);
+        alert("Erro ao copiar o conteúdo");
+    })
+}
+
+function copiarEmail(){
+    const email = "gregoryclariano@gmail.com";
+    navigator.clipboard.writeText(email).then(()=>{
+        alert("Conteudo copiado para a área de trasferência")
+    }).catch(error=>{
+        console.error("erro ao copiar", error);
+        alert("Erro ao copiar o conteúdo");
+    })
+}
