@@ -7,31 +7,37 @@
         <meta name="description" content="Portifolio Grégory Vinicius Clariano Silva">
         <meta name="keyword" content="desenvolvedor web, portifólio, 
             projetos web, programação">
-        <meta name="author" content="Gsuatvo Manoel Dias Polli">
+        <meta name="author" content="Gregory Vinicius">
         <meta property="og:title" content="">
-        <meta property="og:description" content="Portfólio de">
+        <meta property="og:description" content="Portfólio de Gregory">
         <meta property="og:image" content="URL_da_Imagem">
         <meta property="og:url" content="URL_da_Página">
         <link rel="stylesheet" href="css/style.css"/>
-        <style>
-        </style>
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     </head>
     <body class="body" data-tema="dark">
 
+        <nav id="sidebar" class="sidebar">
+            <ul> 
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Menu</a>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#projetos-desenvolvidos">Projetos Desenvolvidos</a></li>
+                <li><a href="#linguagens">Linguagens</a></li>
+                <li><a href="#formacao-academica">Formação Academica</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#funcoes">Funções</a></li>
+            </ul>
+        </nav>
+
         <header class="site-header">
             <div class="container">
-                <nav class="main-navigation">
-                    <ul> 
-                        <li><a href="#sobre-mim">Sobre Mim</a></li>
-                        <li><a href="#projetos-desenvolvidos">Projetos Desenvolvidos</a></li>
-                        <li><a href="#linguagens">Linguagens</a></li>
-                        <li><a href="#formacao-academica">Formação Academica</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                        <a href="#" onclick="alterarTema()" id="linkAlterarTema">Altera tema</a>
-                    </ul>
-                </nav>
+                <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+                <a href="#" onclick="alterarTema()" class="botao-tema" id="linkAlteraTema"><span id="botao-tema" class="mdi mdi-theme-light-dark"></span></a>
             </div>
         </header>
+
+
+
 
         <main class="container">
             <section id="sobre-mim" class="section" sobre-min>
@@ -72,7 +78,7 @@
                     Algoritimos I, foi uma
                     linguagem otima para aprender o basico de logica de programação, alem de ser simples, tambem é uma linguagem
                     "limpa" sem muita
-                    sintax, mas ainda sim utilizamos uma sintax basica para já termos uma organização de codigo e padronização.<span style="color: #663333;"> :)</span></p>
+                    sintax, mas ainda sim utilizamos uma sintax basica para já termos uma organização de codigo e padronização.</p>
                 <p class="language-item">Java - Uma linguagem que é utilizada mundialmente e foi usado para explicar e desenvolver os conceits de POO
                     como polimorfismo e
                     encapisulamento durante a disciplina de programação orientada a objetos(POO), e como trabalho final desenvolvi
@@ -103,23 +109,36 @@
             <p class="contact-item"><a class="main-link" href="#" onclick="copiarTelefone()">Telefone de contato</a></p>
 		</div>
 	    </section>
-        </main>
+        
         <script src="script.js"></script>
-        <div class="container">
-            <h1>Consulta de Repositorio</h1>
-            <input type="text" id="inputNomeUsuario" placeholder="Informe o nome do usuário"/>
-            <button onclick="consultarRepositorios()">
-                Consultar Repositorios
-            </button>
-            <span id="status"></span>
-            <ul id="listaRepositorios"></ul>
-        </div>
+            <section id="funcoes">
+                <article class="section">
+                    <div class="container">
+                        <h1>Consulta de Repositorio</h1>
+                        <input type="text" id="inputNomeUsuario" placeholder="Informe o nome do usuário"/>
+                        <button onclick="consultarRepositorios()">
+                            Consultar Repositorios
+                        </button>
+                        <span id="status"></span>
+                        <ul id="listaRepositorios"></ul>
+                    </div>
+                </article>
+                <article class="section">
+                    <div class="container">
+                        <h1>Regra de 3 simples</h1>
+                        <input type="number" id="num1" placeholder="num1">
+                        <input type="number" id="num2" placeholder="num2">
+                        <br>
+                        <input type="number" id="num3" placeholder="num3">
+                        <input type="number" id="x" placeholder="X">
+                        <br>
+                        <button onclick="regraDe3()">Calcular regra de 3</button> 
+                    </div>
+                </article>
+            </section>
+        </main>
         <footer class="site-footer">
-
-	<p class="main-link">:) *-* :P :D D: :B </p>
-
-    <p class="footer-text">2024 Grégory Vinicius. Todos os direitos reservados.</p>
-
+            <p class="footer-text">2024 Grégory Vinicius. Todos os direitos reservados.</p>
         </footer>
         
     </body>

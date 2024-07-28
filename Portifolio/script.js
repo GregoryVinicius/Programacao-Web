@@ -23,9 +23,6 @@ async function consultarRepositorios(){
     try{
         const resposta = await fetch(url);
         console.log("antes da promisse")
-        /*resposta.then(res=>{
-            console.log(res);
-        }); */
 
         if(!resposta.ok){
             alert("Erro ao realizar a consulta");
@@ -80,4 +77,24 @@ function copiarEmail(){
         console.error("erro ao copiar", error);
         alert("Erro ao copiar o conteúdo");
     })
+}
+
+function regraDe3(){
+    const num1 = document.getElementById("num1").value;
+    const num2 = document.getElementById("num2").value;
+    const num3 = document.getElementById("num3").value;
+
+
+    const mult = num2 * num3;
+
+    x = mult / num1;
+    alert(x);
+}
+
+function openNav() {
+    document.getElementById("sidebar").style.width = "40vw";
+}
+
+function closeNav() {
+    document.getElementById("sidebar").style.width = "0";
 }
