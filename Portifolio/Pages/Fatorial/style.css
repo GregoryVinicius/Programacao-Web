@@ -39,6 +39,8 @@
         margin: 0px;
         width: 100%;
         height: auto;
+        position: absolute;
+        bottom: 0;
     }
     
     .footer-text{
@@ -100,6 +102,10 @@
         border: 2px solid var(--color-dody, #151515);
         border-radius: 8px; 
         margin: 20px;
+    }
+    
+    .project-info p{
+        text-align: justify;
     }
     
     .project-item img{
@@ -240,6 +246,14 @@
     
     .content {
         margin-left: 15px;
+    }
+    
+    .regra-de-3 {
+        width: 20vw;
+    }
+    
+    .article-funcoes {
+        padding: 10px;
     }
     
     [data-tema='dark'] {

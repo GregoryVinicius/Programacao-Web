@@ -84,11 +84,30 @@ function regraDe3(){
     const num2 = document.getElementById("num2").value;
     const num3 = document.getElementById("num3").value;
 
-
     const mult = num2 * num3;
 
     x = mult / num1;
     alert(x);
+}
+
+function fatorial(){
+    let numFato = document.getElementById("numFato").value;
+
+    for (let i = numFato - 1; i > 0; i--){
+        numFato = numFato * i;      
+    }
+    alert(numFato);
+}
+
+function gerarNomeAleatorio() {
+    fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(data => {
+            const user = data.results[0];
+            const nomeCompleto = `${user.name.first} ${user.name.last}`;
+            document.getElementById('nomeAleatorio').innerText = nomeCompleto;
+        })
+        .catch(error => console.error('Erro ao buscar nome:', error));
 }
 
 function openNav() {
